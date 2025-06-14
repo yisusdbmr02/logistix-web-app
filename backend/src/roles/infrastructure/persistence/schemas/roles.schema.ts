@@ -12,7 +12,7 @@ import { Schema } from 'mongoose';
  * Schema for the Roles entity.
  * @class RolesSchema
  * @description This schema defines the structure of the Roles entity in the database.
- * It includes fields for the permission ID, name, createdAt, lasModifiedAt, with validation rules.
+ * It includes fields for the permission ID, name, createdAt, lastModifiedAt, with validation rules.
  */
 export const RolesSchema = new Schema({
     _id: { type: String },

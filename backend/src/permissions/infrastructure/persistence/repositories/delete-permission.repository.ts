@@ -24,7 +24,7 @@ export class DeletePermissionRepository {
    * allowing the repository to perform CRUD operations on the Permission collection in the database.
    * It uses the `@InjectModel` decorator to inject the model, which is defined in the Mongoose schema.
    */
-  constructor(@InjectModel('Permission') private readonly model: Model<any>) {}
+  constructor(@InjectModel('Permissions') private readonly model: Model<any>) {}
   /**
    * Deletes a permission by its ID.
    * @param {string} id - The ID of the permission to be deleted.

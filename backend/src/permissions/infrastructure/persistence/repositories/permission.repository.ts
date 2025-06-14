@@ -6,7 +6,7 @@
  * It implements the PermissionRepository interface and uses various repository classes for CRUD operations.
  */
 import { Injectable } from "@nestjs/common";
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 import { CreatePermissionRepository } from "./create-permission.repository";
 import { FindPermissionRepository } from "./find-permission.repository";
 import { UpdatePermissionRepository } from "./update-permission.repository";

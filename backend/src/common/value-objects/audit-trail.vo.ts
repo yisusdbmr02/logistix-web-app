@@ -28,10 +28,10 @@ export class AuditTrail {
     }
   }
 /**
- * Gets the CreatedAt timestamp.
- * @return {CreatedAt} The CreatedAt timestamp.
- * @method getCreatedAt
- * @description This method returns the CreatedAt timestamp of the Timestamps instance.
+ * Gets the CreatedAt and lastModifiedAt timestamp.
+ * @return {CreatedAt, lastModifiedAt} The CreatedAt and lastModifiedAt timestamp.
+ * @method toObject
+ * @description This method returns the CreatedAt and lastModifiedAt timestamp of the Timestamps instance.
  */
   toObject() {
     return {

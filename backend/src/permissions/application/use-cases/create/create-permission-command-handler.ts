@@ -6,7 +6,7 @@
  * It implements the logic to handle the creation of a permission using the provided command.
  */
 import { Inject } from "@nestjs/common";
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 import { CreatePermissionCommand } from "./create-permission.command";
 import { CreatePermissionResponse } from "./create-permission.response";
 import { PermissionId } from "src/permissions/domain/value-objects/permission-id.vo";
