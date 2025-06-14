@@ -8,7 +8,7 @@
  */
 
 import { Inject } from "@nestjs/common";
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 import { UpdatePermissionCommand } from "./update-permission.command";
 import { UpdatePermissionResponse } from "./update-permission.response";
 import { PermissionName } from "src/permissions/domain/value-objects/permission-name.vo";

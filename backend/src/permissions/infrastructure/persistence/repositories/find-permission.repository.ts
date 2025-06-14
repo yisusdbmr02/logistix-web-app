@@ -25,7 +25,7 @@ export class FindPermissionRepository {
    * @description This constructor injects the Mongoose model for the Permission entity,
    * allowing the repository to perform CRUD operations on the Permission collection in the database.
    */
-  constructor(@InjectModel('Permission') private readonly model: Model<any>) {}
+  constructor(@InjectModel('Permissions') private readonly model: Model<any>) {}
   /**
    * Finds a permission by its ID.
    * @param {string} id - The ID of the permission to be found.

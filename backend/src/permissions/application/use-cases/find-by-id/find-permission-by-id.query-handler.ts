@@ -8,7 +8,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { FindPermissionByIdQuery } from './find-permission-by-id.query';
 import { FindPermissionByIdResponse } from './find-permission-by-id.response';
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 import { PermissionNotFoundException } from '../../../domain/exceptions/permission-not-found.exception';
 
 /**

@@ -26,7 +26,7 @@ export class UpdatePermissionRepository {
    * @description This constructor injects the Mongoose model for the Permission entity,
    * allowing the repository to perform CRUD operations on the Permission collection in the database.
    */
-  constructor(@InjectModel('Permission') private readonly model: Model<any>) {}
+  constructor(@InjectModel('Permissions') private readonly model: Model<any>) {}
   /**
    * Updates a permission in the database.
    * @param {string} id - The ID of the permission to be updated.

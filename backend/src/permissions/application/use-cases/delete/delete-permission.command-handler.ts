@@ -8,7 +8,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { DeletePermissionCommand } from './delete-permission.command';
 import { DeletePermissionResponse } from './delete-permission.response';
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 import { PermissionNotFoundException } from '../../../domain/exceptions/permission-not-found.exception';
 
 /**

@@ -28,7 +28,7 @@ export class CreatePermissionRepository {
    * It uses the `@InjectModel` decorator to inject the model, which is defined in the Mongoose schema.
    * The model is used to create, read, update, and delete permissions in the database.
   */
-  constructor(@InjectModel('Permission') private readonly model: Model<any>) {}
+  constructor(@InjectModel('Permissions') private readonly model: Model<any>) {}
 
   /**
    * Creates a new permission in the database.
