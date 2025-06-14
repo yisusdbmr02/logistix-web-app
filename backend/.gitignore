@@ -34,6 +34,7 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+
 # dotenv environment variable files
 .env
 .env.development.local
@@ -59,9 +60,9 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # nyc test coverage
 .nyc_output
 
-./eslint.config.mjs
+.eslint.config.mjs
 # Prettier config
 .prettierrc
 .prettierignore
 
-./schema.gql
+.schema.gql

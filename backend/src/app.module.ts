@@ -8,6 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
 import { join } from 'path';
+import { RolesModule } from './roles/roles.module';
 @Module({
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
@@ -19,6 +20,7 @@ import { join } from 'path';
     MongooseModule.forRoot(process.env.MONGODB_URI || 'mongodb://localhost/logistix'),
     ConfigModule.forRoot({isGlobal:true}),
     PermissionsModule,
+    RolesModule,
   ],
   exports: [MongooseModule],
   controllers: [AppController],

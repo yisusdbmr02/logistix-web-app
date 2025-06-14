@@ -8,7 +8,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { FindAllPermissionsQuery } from './find-all-permissions.query';
 import { FindAllPermissionsResponse } from './find-all-permissions.response';
-import { PermissionRepository } from "src/permissions/domain/interfaces/permission.repository.interface";
+import { PermissionRepository } from "src/permissions/domain/interfaces/permission-repository.interface";
 
 /**
  * Query handler for finding all permissions.

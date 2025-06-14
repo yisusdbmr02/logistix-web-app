@@ -27,7 +27,7 @@ import { DeletePermissionResolver } from './presentation/graphql/resolvers/delet
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: 'Permission', schema: PermissionSchema }]),
+    MongooseModule.forFeature([{ name: 'Permissions', schema: PermissionSchema }]),
   ],
   providers: [
     CreatePermissionResolver,
