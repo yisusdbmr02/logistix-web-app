@@ -4,7 +4,9 @@
  * It includes methods to retrieve the permission's ID and name.
  * @module Permission
  * @author [Jesús Díaz]
+ * @version 1.1.0
  */
+import { AuditTrail } from "src/common/value-objects/audit-trail.vo";
 import { PermissionId } from "../value-objects/permission-id.vo";
 import { PermissionName } from "../value-objects/permission-name.vo";
 
@@ -16,6 +18,7 @@ export class Permission {
   constructor(
     private readonly id: PermissionId,
     private readonly name: PermissionName,
+    private readonly auditTrail: AuditTrail
   ) {}
 
   /**
@@ -36,5 +39,23 @@ export class Permission {
    */
   getName(): string {
     return this.name.getValue();
+  }
+    /**
+   * Gets the audit trail of the role.
+   * @method getAuditTrail
+   * @returns The audit trail of the role.
+   * @description This method returns the audit trail of the permission, which includes creation and modification timestamps.
+   */
+  getCreatedAt(): Date {
+    return this.auditTrail.createdAt.getValue();
+  }
+  /**
+   * Gets the last modified timestamp of the role.
+   * @method getLastModifiedAt
+   * @returns The last modified timestamp of the role.
+   * @description This method returns the last modified timestamp of the permission, which is updated whenever the role is modified.
+   */
+  getLastModifiedAt(): Date {
+    return this.auditTrail.lastModifiedAt.getValue();
   }
 }

@@ -2,6 +2,7 @@
  * @file CreatePermissionResponse
  * @module CreatePermissionResponse
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This module defines the response structure for creating a new permission.
  * It includes the permission ID and name in the response.
  */
@@ -27,6 +28,8 @@ export class CreatePermissionResponse {
     return {
       id: this.permission.getId(),
       name: this.permission.getName(),
+      createdAt: this.permission.getCreatedAt(),
+      lastModifiedAt: this.permission.getLastModifiedAt(),
     };
   }
 }

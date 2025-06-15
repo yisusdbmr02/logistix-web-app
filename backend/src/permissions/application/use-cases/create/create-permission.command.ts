@@ -2,6 +2,7 @@
  * @file Command for creating a new permission.
  * @module CreatePermissionCommand
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This command is used to encapsulate the data required to create a new permission.
  * It includes the permission name.
  */

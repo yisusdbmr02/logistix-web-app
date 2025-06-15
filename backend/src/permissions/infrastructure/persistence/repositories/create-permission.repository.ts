@@ -2,6 +2,7 @@
  * @fileoverview CreatePermissionRepository
  * @module CreatePermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This repository is responsible for creating a new permission in the database.
  * It uses Mongoose to interact with the MongoDB database.
  * The repository maps the domain entity to a persistence model and vice versa.

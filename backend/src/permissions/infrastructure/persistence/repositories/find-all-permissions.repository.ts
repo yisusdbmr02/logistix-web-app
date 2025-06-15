@@ -2,6 +2,7 @@
  * @fileoverview Repository for finding all permissions.
  * @module FindAllPermissionsRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This repository is responsible for retrieving all permissions from the database.
  * It uses Mongoose to interact with the MongoDB database and maps the retrieved documents to domain entities.
  * The repository provides a method to find all permissions, returning an array of Permission entities.

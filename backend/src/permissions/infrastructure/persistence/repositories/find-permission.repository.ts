@@ -2,6 +2,7 @@
  * @fileoverview Repository for finding permissions in the database.
  * @module FindPermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This repository provides methods to find permissions by their ID.
  * It uses Mongoose to interact with the MongoDB database and maps the found documents to domain entities.
  */

@@ -2,6 +2,7 @@
  * @fileoverview Resolver for finding all permissions.
  * @module FindAllPermissionsResolver
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This resolver handles the GraphQL query to retrieve all permissions.
  * It uses the FindAllPermissionsQueryHandler to execute the query and return the results.
  * 

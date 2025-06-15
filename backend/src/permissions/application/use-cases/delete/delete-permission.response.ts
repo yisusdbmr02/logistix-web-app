@@ -2,6 +2,7 @@
  * @fileoverview Response class for the delete permission use case.
  * @module DeletePermissionResponse
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This class encapsulates the response data for the delete permission operation.
  * It includes a success flag and a message indicating the result of the operation.
  */

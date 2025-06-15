@@ -2,6 +2,7 @@
  * @fileoverview MongoDB implementation of the PermissionRepository interface.
  * @module MongoPermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This class provides methods to interact with the MongoDB database for permission management.
  * It implements the PermissionRepository interface and uses various repository classes for CRUD operations.
  */

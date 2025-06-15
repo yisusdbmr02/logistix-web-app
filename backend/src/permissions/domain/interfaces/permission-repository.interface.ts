@@ -2,6 +2,7 @@
  * @fileoverview Interface for the Permission Repository.
  * @module PermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This interface defines the methods for managing permissions in the repository.
  * It includes methods for creating, finding, updating, and deleting permissions.
  * Each method returns a Promise that resolves to the appropriate type.

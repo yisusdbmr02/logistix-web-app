@@ -2,6 +2,7 @@
  * @fileoverview Response class for the find all permissions use case.
  * @module FindAllPermissionsResponse 
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This class is used to encapsulate the response data for retrieving all permissions.
  * It includes a method to convert the permissions to a JSON format.
  * The response contains an array of permissions, each represented by its ID and name.
@@ -30,6 +31,8 @@ export class FindAllPermissionsResponse {
     return this.permissions.map((permission) => ({
       id: permission.getId(),
       name: permission.getName(),
+      createdAt: permission.getCreatedAt(),
+      lastModifiedAt: permission.getLastModifiedAt(),
     }));
   }
 }
