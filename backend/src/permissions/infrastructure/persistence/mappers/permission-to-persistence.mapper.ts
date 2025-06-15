@@ -2,6 +2,7 @@
  * @fileoverview Mapper for converting a Permission entity to its persistence representation.
  * @module PermissionToPersistence
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This mapper is used to convert a Permission domain entity into a format suitable for persistence in the database.
  * It encapsulates the logic for transforming the domain entity into a structure that can be stored in a database.
  */
@@ -24,6 +25,8 @@ export class PermissionToPersistence {
     return {
       _id: permission.getId(),
       name: permission.getName(),
+      createdAt: permission.getCreatedAt(),
+      lastModifiedAt: permission.getLastModifiedAt(),
     };
   }
 }

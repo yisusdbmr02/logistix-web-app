@@ -2,6 +2,7 @@
  * @fileoverview Input DTO for creating a permission.
  * @module CreatePermissionInput
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This input DTO is used to transfer data when creating a new permission via GraphQL.
  * It includes validation rules to ensure the name is not empty and has a minimum length.
  */

@@ -2,6 +2,7 @@
  * @fileoverview Query handler for finding a permission by ID.
  * @module FindPermissionByIdQueryHandler
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This handler processes the query to find a permission by its ID and returns the corresponding response.
  * It uses the PermissionRepository to access the data layer.
  */

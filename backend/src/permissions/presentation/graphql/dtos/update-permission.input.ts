@@ -2,6 +2,7 @@
  * @fileoverview UpdatePermissionInput class for GraphQL input type.
  * @module UpdatePermissionInput
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This class is used to define the input type for updating a permission in GraphQL.
  * It extends the CreatePermissionInput class to inherit its fields and makes them optional.
  * The `id` field is required to identify the permission to be updated.

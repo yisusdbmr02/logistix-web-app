@@ -2,6 +2,7 @@
  * @fileoverview UpdatePermissionResolver class for GraphQL resolver.
  * @module UpdatePermissionResolver
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This resolver handles the GraphQL mutation for updating a permission.
  * It uses the UpdatePermissionCommandHandler to execute the update command.
  * 

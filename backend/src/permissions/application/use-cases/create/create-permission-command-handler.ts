@@ -2,6 +2,7 @@
  * @file It implements the logic to handle the creation of a permission using the provided command.
  * @module CreatePermissionCommandHandler
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This file contains the command handler for creating a new permission.
  * It implements the logic to handle the creation of a permission using the provided command.
  */
@@ -12,6 +13,7 @@ import { CreatePermissionResponse } from "./create-permission.response";
 import { PermissionId } from "src/permissions/domain/value-objects/permission-id.vo";
 import { PermissionName } from "src/permissions/domain/value-objects/permission-name.vo";
 import { Permission } from "src/permissions/domain/entities/permission.entity";
+import { AuditTrail } from "src/common/value-objects/audit-trail.vo";
 
 /**
  * Command handler for creating a new permission.
@@ -37,7 +39,8 @@ export class CreatePermissionCommandHandler {
   async execute(command: CreatePermissionCommand): Promise<CreatePermissionResponse> {
     const id = new PermissionId();
     const name = new PermissionName(command.name);
-    const permission = new Permission(id, name);
+    const auditTrail = new AuditTrail();
+    const permission = new Permission(id, name, auditTrail);
     const created = await this.repository.create(permission);
     return new CreatePermissionResponse(created);
   }

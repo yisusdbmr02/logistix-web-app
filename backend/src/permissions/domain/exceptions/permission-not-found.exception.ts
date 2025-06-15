@@ -2,6 +2,7 @@
  * @fileoverview Exception for permission not found.
  * @module PermissionNotFoundException
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This exception is thrown when a permission with a specific ID is not found in the system.
  * It extends the built-in Error class and provides a default message indicating the ID of the missing permission.
  */

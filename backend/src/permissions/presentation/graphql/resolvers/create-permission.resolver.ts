@@ -2,6 +2,7 @@
  * @fileoverview Resolver for creating a permission in GraphQL.
  * @module CreatePermissionResolver
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This resolver handles the GraphQL mutation for creating a new permission.
  * It uses the CreatePermissionCommandHandler to execute the command and return the created permission entity.
  * It defines a mutation named `createPermission` that takes a `CreatePermissionInput` as an argument and returns a `PermissionEntity`.

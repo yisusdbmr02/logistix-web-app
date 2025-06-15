@@ -2,6 +2,7 @@
  * @fileoverview Response class for the update permission use case.
  * @module UpdatePermissionResponse
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This class encapsulates the response data for updating a permission.
  * It includes the permission ID and name.
  */
@@ -31,6 +32,8 @@ export class UpdatePermissionResponse {
     return {
       id: this.permission.getId(),
       name: this.permission.getName(),
+      createdAt: this.permission.getCreatedAt(),
+      lastModifiedAt: this.permission.getLastModifiedAt(),
     };
   }
 }

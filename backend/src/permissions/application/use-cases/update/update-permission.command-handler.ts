@@ -2,6 +2,7 @@
  * @fileoverview Command handler for updating a permission.
  * @module UpdatePermissionCommandHandler
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This command handler is responsible for processing the update permission command.
  * It retrieves the current permission, updates its name if provided, and saves the updated permission.
  * If the permission does not exist, it throws an error.
@@ -14,6 +15,9 @@ import { UpdatePermissionResponse } from "./update-permission.response";
 import { PermissionName } from "src/permissions/domain/value-objects/permission-name.vo";
 import { Permission } from "src/permissions/domain/entities/permission.entity";
 import { PermissionId } from "src/permissions/domain/value-objects/permission-id.vo";
+import { AuditTrail } from "src/common/value-objects/audit-trail.vo";
+import { CreatedAt } from "src/common/value-objects/created-at.vo";
+import { LastModifiedAt } from "src/common/value-objects/last-modified-at.vo";
 /**
  * Command handler for updating a permission.
  * @class UpdatePermissionCommandHandler
@@ -45,6 +49,10 @@ export class UpdatePermissionCommandHandler {
     const updatedPermission = new Permission(
       new PermissionId(command.id),
       name,
+      new AuditTrail(
+        new CreatedAt(current.getCreatedAt()),
+        new LastModifiedAt()
+      )
     );
 
     const saved = await this.repository.update(command.id, updatedPermission);

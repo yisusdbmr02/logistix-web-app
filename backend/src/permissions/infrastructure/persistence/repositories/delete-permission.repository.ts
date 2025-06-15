@@ -2,6 +2,7 @@
  * @fileoverview Repository for deleting a permission.
  * @module DeletePermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This repository is responsible for deleting a permission from the database.
  * It uses Mongoose to interact with the MongoDB database.
  * The repository provides a method to delete a permission by its ID.

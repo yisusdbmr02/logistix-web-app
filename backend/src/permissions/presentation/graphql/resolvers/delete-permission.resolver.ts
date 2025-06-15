@@ -2,6 +2,7 @@
  * @fileoverview Resolver for deleting a permission.
  * @module DeletePermissionResolver
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This resolver handles the GraphQL mutation for deleting a permission.
  * It uses the DeletePermissionCommandHandler to execute the deletion logic.
  */

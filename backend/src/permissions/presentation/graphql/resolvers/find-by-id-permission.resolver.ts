@@ -2,6 +2,7 @@
  * @fileoverview Resolver for finding a permission by ID.
  * @module FindPermissionByIdResolver
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This resolver handles the GraphQL query to find a permission by its ID.
  * It uses the FindPermissionByIdQueryHandler to execute the query and return the permission entity.
  */

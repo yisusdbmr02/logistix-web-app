@@ -2,6 +2,7 @@
  * @fileoverview Exception for invalid permission names.
  * @module InvalidPermissionNameException
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This exception is thrown when an invalid permission name is provided.
  * It extends the built-in Error class and provides a default message.
  */

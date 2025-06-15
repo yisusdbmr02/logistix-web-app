@@ -2,6 +2,7 @@
  * @fileoverview Command handler for deleting a permission.
  * @module DeletePermissionCommandHandler
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This command handler processes the deletion of a permission by its ID.
  * It checks if the permission exists and then deletes it, returning a response indicating success.
  */

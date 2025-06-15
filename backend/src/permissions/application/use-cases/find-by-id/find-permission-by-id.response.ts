@@ -2,6 +2,7 @@
  * @fileoverview Response class for the find permission by ID use case.
  * @module FindPermissionByIdResponse
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This class is used to format the response when a permission is found by its ID.
  * It encapsulates the permission entity and provides a method to convert it to JSON format.
  */
@@ -31,6 +32,8 @@ export class FindPermissionByIdResponse {
     return {
       id: this.permission.getId(),
       name: this.permission.getName(),
+      createdAt: this.permission.getCreatedAt(),
+      lastModifiedAt: this.permission.getLastModifiedAt(),
     };
   }
 }

@@ -2,12 +2,15 @@
  * @file PermissionOutputDto Data Transfer Object
  * @module PermissionOutputDto
  * @author [Jesús Díaz]
+ * @version 1.1.0
  * @description This DTO is used to transfer permission data in the output format.
  * It includes the permission ID and name.
  */
 export class PermissionOutputDto {
   readonly id: string;
   readonly name: string;
+  readonly createdAt: Date;
+  readonly lastModifiedAt: Date;
   /**
    * Creates a new PermissionOutputDto instance.
    * @param {Partial<PermissionOutputDto>} partial - Partial object to initialize the DTO.

@@ -2,6 +2,7 @@
  * @file Value Object for Permission ID (UUID based). Validates input UUID or generates a new one if undefined. 
  * @module PermissionId
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This Value Object encapsulates the logic for handling Permission IDs, ensuring they are valid UUIDs.
  */
 import { v4 as uuidv4, validate as uuidValidate } from 'uuid';

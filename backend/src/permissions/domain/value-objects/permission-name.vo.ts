@@ -3,6 +3,7 @@
  * @file PermissionName Value Object
  * @module PermissionName
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This Value Object encapsulates the logic for handling permission names, ensuring they are valid strings.
  */
 export class PermissionName {

@@ -2,6 +2,7 @@
  * @fileoverview Query handler for finding all permissions.
  * @module FindAllPermissionsQueryHandler
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This file contains the query handler for retrieving all permissions from the repository.
  * It uses the `PermissionRepository` to fetch the permissions and returns them in a response object.
  */

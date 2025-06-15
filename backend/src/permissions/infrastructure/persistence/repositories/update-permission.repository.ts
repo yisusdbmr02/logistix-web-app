@@ -2,6 +2,7 @@
  * @fileoverview Repository for updating permissions in the database.
  * @module UpdatePermissionRepository
  * @author [Jesús Díaz]
+ * @version 1.0.0
  * @description This repository provides methods to update existing permissions in the database.
  * It uses Mongoose for MongoDB interactions and maps between domain entities and persistence models.
  */
